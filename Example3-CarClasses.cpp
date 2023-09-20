@@ -2,10 +2,24 @@
 //
 
 #include <iostream>
-
+#include "Car.h"
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+	Car c1; 
+
+	cout << c1.getEngine().getCapacity() << endl;
+
+	
+
+	for (int i = 0;i < 4;i++)
+	{
+		cout << c1.getWheel(i).getDiameter() << endl;
+	}
+
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
