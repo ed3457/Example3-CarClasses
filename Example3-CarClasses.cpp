@@ -10,6 +10,14 @@ int main()
 
 	cout << c1.getEngine().getCapacity() << endl;
 
+	Wheel temp = c1.getWheel(2);
+	temp.setDiameter(18);
+	c1.setWheel(2,temp);
+
+
+	temp = c1.getWheel(3);
+	temp.setDiameter(18);
+	c1.setWheel(3, temp);
 	
 
 	for (int i = 0;i < 4;i++)
@@ -17,6 +25,12 @@ int main()
 		cout << c1.getWheel(i).getDiameter() << endl;
 	}
 
+	///////////////////////////////////////
+
+	// Create another object using the 2nd constructor: 
+	//1. create an Engine object 
+	//2. create an array of wheels 
+	//3. create the car object 
 
 
 
